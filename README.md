@@ -10,7 +10,7 @@ MATLAB
 Code has been tested on Mac OSX and Linux
 
 Installation guide
-For each script, change the variable ‘dataFolder’ to the location of the folder containing the code. The script should add the Functions file, which contains code from other group that is needed for the analysis. All other functions should be contained directly in the scripts themselves. The scripts are standard MATLAB code so have no installation time. 
+Modify the dataFolder variable in the Setup.m script to give the location of the code file. By default, the data should be located in the same directory as the code, but you can change this by modifying the SetUp.m script. The script should add the Functions file, which contains code from other group that is needed for the analysis. All other functions should be contained directly in the scripts themselves. The scripts are standard MATLAB code so have no installation time. 
 
 Figure 8B requires EEGlab and Feildtrip to be on the MATLAB path
 
