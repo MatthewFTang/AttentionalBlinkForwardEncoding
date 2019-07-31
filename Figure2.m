@@ -1,6 +1,6 @@
 clearvars;
 
-SetUp.m
+SetUp
 dataFolder= [dataFolder '/Exp1'];
 
 cd(dataFolder);
