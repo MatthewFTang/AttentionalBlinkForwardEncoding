@@ -16,4 +16,4 @@ Modify the dataFolder variable in the Setup.m script to give the location of the
 Figure 8B requires EEGlab and Feildtrip to be on the MATLAB path
 
 
-The scripts for the behavioural data (Figures 2 and 3) should run very quickly (less than 1 mins). The scripts for EEG data will take around 20 mins for each participant on an older MacBook Pro. Will be considerably faster when run on a cluster. 
+The scripts for the behavioural data (Figures 2 and 3) should run very quickly (less than 1 min). The scripts for EEG data will take around 20 mins for each participant on an older MacBook Pro. Will be considerably faster when run on a cluster. 
