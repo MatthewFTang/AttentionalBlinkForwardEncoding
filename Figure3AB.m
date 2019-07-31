@@ -128,8 +128,7 @@ set(gcf,    'Renderer','painters');
 
 
 %% Panel A
-            bins= -90:20:90;
-
+bins= -90:20:90;
 Cols = linspecer(2);
 clear counts StoreE
 for target=1:2
@@ -213,28 +212,56 @@ for l=1:5
         plot(X,fitLine,'Color',Cols(t,:),'LineWidth',2)
         ylim([-30 30])
         hold on
-        xticks([-90:90:180])
         
     end
     yticks([-30:10:30])
+        xticks([-90:90:90])
+       xticklabels([-90 0 90])
+
     title(['Lag ',num2str(realLag(l))])
     box off
     if l==1
         
-        ylabel('Orientation error (\circ)')
-    elseif l==3
-        xlabel('T1 orientation relative to T2 (\circ)')
-        set(gca,'Yticklabel',[])
+        ylh=ylabel('Orientation error (\circ)');
+        ylh.Position(1) = ylh.Position(1) -20;  % move the label 0.1 data-units further down
+        ylh.Position(2) = ylh.Position(2) -30;  % move the label 0.1 data-units further down
         
+        ylh.Rotation=90;
+    elseif l==3
+        xlh= xlabel('T1 orientation relative to T2 (\circ)');
+       xlh.Position(2) = xlh.Position(2) -7;  % move the label 0.1 data-units further down
+               xlh.Position(1) = xlh.Position(1) +300;  % move the label 0.1 data-units further down
+
+        set(gca,'Yticklabel',[])
         
     else
         set(gca,'Yticklabel',[])
-        
     end
     if l==5
-               legend('T1','','T2','')
- 
+        l=legend('T1','','T2','');
+       set(l,'Position',[    0.8848    0.6201    0.1080    0.3599])
     end
+
+                
+    axes1=gca;
+
+%     set(axes1,'FontSize',14,'TickDir','in','XAxisLocation','origin',...
+%         'YAxisLocation','origin','LineWidth',1.5,...
+%         'XMinorTick','off','YMinorTick','off'...
+%         ,'TickLength',[.015 .015],'Layer','bottom')
+plot([-90 90],[0 0 ],'-k','LineWidth',1)
+plot([0 0 ],[-25 25],'-k','LineWidth',1)
+xlim([-110 110])
+    set(axes1,'FontSize',14,'TickDir','in','XAxisLocation','bottom',...
+        'YAxisLocation','left','LineWidth',1.5,...
+        'XMinorTick','off','YMinorTick','off'...
+        ,'TickLength',[.015 .015],'Layer','bottom')
+
+%     
+    
 end
 set(gcf,    'Renderer','painters');
 set(gcf,'Position',[   560   766   560   182])
+
+cd(figFile)
+print('Fig3A','-depsc')
