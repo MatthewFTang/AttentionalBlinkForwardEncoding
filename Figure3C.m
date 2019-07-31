@@ -144,6 +144,8 @@ set(axes1,'FontSize',14,'TickDir','in','XAxisLocation','bottom',...
     'XMinorTick','off','YMinorTick','off'...
     ,'TickLength',[.015 .015],'Layer','bottom')
 end
+cd(figFile)
+
 
 set(gcf,'Position',[   560   766   560   182])
 print('BiasDistractors.eps','-depsc')
