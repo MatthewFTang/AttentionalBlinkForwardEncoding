@@ -247,7 +247,7 @@ Orients =-89:90;
 clear FitStore TempStore
 for part =1:size(StoreBig,1)
     TempStore=zeros(2,2,size(StoreBig,5),size(StoreBig,6),4);
-    for lag =1
+    for lag =1:2
         for correct=1:2
             
             for items =[4 7 11]
