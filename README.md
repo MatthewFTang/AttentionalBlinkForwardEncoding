@@ -1,5 +1,5 @@
 # AttentionalBlinkForwardEncoding
-Underlying code for manuscript: Tang, M. F., Ford, L., Arabzadeh, E., Enns, J. T., Visser, T. A. W., &amp; Mattingley, J. B. (2019). Neural dynamics of the attentional blink revealed by encoding orientation selectivity during rapid visual presentation. bioRxiv, 595355. http://doi.org/10.1101/595355
+Underlying code for manuscript: Tang, M. F., Ford, L., Arabzadeh, E., Enns, J. T., Visser, T. A. W., & Mattingley, J. B. (2020). Neural dynamics of the attentional blink revealed by encoding orientation selectivity during rapid visual presentation. Nature Communications, 11(1), 434. http://doi.org/10.1038/s41467-019-14107-z
 
 The data are available at : https://osf.io/f9g6h/
 
