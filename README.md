@@ -7,12 +7,12 @@ The data are available [here](https://osf.io/f9g6h/)
 
 
 
-##Installation guide 
-###System requirements 
+## Installation guide 
+### System requirements 
 MATLAB 
 Code has been tested on Mac OSX and Linux
 
-###Getting started
+### Getting started
 Modify the dataFolder variable in the Setup.m script to give the location of the code file. By default, the data should be located in the same directory as the code, but you can change this by modifying the SetUp.m script. The script should add the Functions file, which contains code from other group that is needed for the analysis. All other functions should be contained directly in the scripts themselves.
 
 Figure 8B requires EEGlab and Fieldtrip to be on the MATLAB path
