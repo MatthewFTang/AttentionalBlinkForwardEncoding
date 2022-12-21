@@ -9,7 +9,7 @@ The data are available [here](https://osf.io/f9g6h/)
 
 ## Installation guide 
 ### System requirements 
-MATLAB 
+MATLAB <br>
 Code has been tested on Mac OSX and Linux
 
 ### Getting started
