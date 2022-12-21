@@ -7,7 +7,7 @@ The data are available [here](https://osf.io/f9g6h/)
 
 
 
-## Installation guide 
+## Usage guide 
 ### System requirements 
 MATLAB <br>
 Code has been tested on Mac OSX and Linux
